@@ -89,7 +89,7 @@
     <input type="email" id="email" name="email" required>
 
     <label for="password">Password (min 6 characters):</label>
-    <input type="password" id="password" name="password" minlength="6" required>
+    <input type="password" id="password" name="password" minlength="6" required pattern="^(?=.*[A-Z])(?=.*\d).{8,}$">
 
     <label for="age">Age (18-100):</label>
     <input type="number" id="age" name="age" min="18" max="100" required>
@@ -103,7 +103,7 @@
     <label for="dob">Date of Birth:</label>
     <input type="date" id="dob" name="dob" required>
 
-    <label>Gender:</label>
+    <label><input type="text"/>Gender:</label>
     <label class="gender-label"><input type="radio" id="male" name="gender" value="Male" required> Male</label>
     <label class="gender-label"><input type="radio" id="female" name="gender" value="Female"> Female</label>
 
